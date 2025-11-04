@@ -1,0 +1,12 @@
+{
+  "typeResult": "serie",
+  "title": "El Villano del Destino",
+  "author": "Autor",
+  "year": "Año",
+  "raiting": 5,
+  "demography": "demography",
+  "genre": "Género",
+  "description": "Descripción",
+  "tags": ["tag1", "tag2"],
+  "image": "/img/gu.jpg"
+}

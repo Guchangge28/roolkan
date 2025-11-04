@@ -1,0 +1,149 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    .fx {
+        display: flex;
+        align-items: center;
+    }
+    .fx_row {
+        flex-direction: row;
+    }
+    .fx_col {
+        flex-direction: column;
+    }
+    .fx_wrap {
+        flex-wrap: wrap;
+    }
+    .main__title {
+        text-align: center;
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+    .main__nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .main__gallery {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px 0;
+        justify-content: space-around;
+    }
+
+    .gallery__item {
+        width: 48%;
+        height: 220px;
+        position: relative;
+    }
+
+    .gallery__item span {
+        position: absolute;
+    }
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .title {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 0.9rem;
+        padding: 2px 0 2px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .raiting {
+        border-radius: 5px;
+        top: 24px;
+        right: 0;
+        font-size: 0.9rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        margin: 2px;
+        padding: 0 5px 0 5px;
+        text-align: center;
+    }
+    .genre {
+        border-radius: 5px;
+        top: 24px;
+        left: 0;
+        font-size: 0.9rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        margin: 2px;
+        padding: 0 5px 0 5px;
+        text-align: center;
+    }
+    .status {
+        border-radius: 5px;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        font-size: 0.9rem;
+        color: #ffffff;
+        text-align: center;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .demography {
+        top: 0;
+        left: 0;
+        font-size: 0.95rem;
+        width: 100%;
+        color: #ffffff;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .ongoing {
+        background-color: rgba(0, 255, 0, 0.3);
+    }
+    .novela {
+        background-color: rgba(0, 120, 255, 0.7);
+    }
+    .manwha {
+        background-color: rgba(150, 55, 100, 0.7);
+    }
+    .seinen {
+        background-color: rgba(255, 0, 0, 0.7);
+    }
+    .shounen {
+        background-color: rgba(255, 255, 0, 0.7);
+    }
+    .shoujo {
+        background-color: rgba(255, 0, 255, 0.7);
+    }
+    @media (min-width: 400px) {
+        .gallery__item {
+            width: 46%;
+            height: 250px;
+        }
+    }
+</style>
+<div class="main fx fx_col">
+    <div class="main__title">
+        <h1 class="main__title-content">Proyectos</h1>
+    </div>
+    <!--<ul class="main__nav fx fx_row">
+        <li class="main__nav-item"><p>vista 1</p></li>
+        <li class="main__nav-item"><p>vista 2</p></li>
+        <li class="main__nav-item"><p>vista 3</p></li>
+    </ul>-->
+    <div id="main_galery" class="main__gallery fx">
+        <!-- Galery Elements -->
+    </div>
+    <div class="main__footer">
+        <p>ver más</p>
+    </div>
+</div>
