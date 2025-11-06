@@ -9,8 +9,8 @@ y ofrecerse para un rol, más adelante se estarán presentando nuevos roles.
 
 ## Guia de instalacion
 ### Instalacion de dependencias
-- git [https://git-scm.com/install/]
-- node [https://nodejs.org/en/download/]
+- [git] (https://git-scm.com/install/)
+- [node] (https://nodejs.org/en/download/)
 
 ### Clone este repositorio
 1. clone el repositorio en una carpeta de su preferencia
