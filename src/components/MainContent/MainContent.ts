@@ -1,11 +1,12 @@
 import { HTMLMainContent } from "../../configs/components.ts";
 import type { Serie } from "../../shared/types.d.ts";
-import { SERIES_JSON } from "../../configs/data.ts";
+import { SERIES_LN_JSON } from "../../configs/data.ts";
 import GalleryCard from "../GalleryCard/GalleryCard.ts";
 import loader_text from "../../utils/loader_text.ts";
 import loader_json from "../../utils/loader_json.ts";
 
 class MainContent extends HTMLElement {
+  isFirst = false;
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -14,7 +15,7 @@ class MainContent extends HTMLElement {
   async connectedCallback() {
     const [result1, result2] = await Promise.all([
       loader_text(HTMLMainContent),
-      loader_json<Serie[]>(SERIES_JSON),
+      loader_json<Serie[]>(SERIES_LN_JSON),
     ]);
     if (!this.shadowRoot || !result1.success || !result2.success) return;
 
@@ -32,11 +33,18 @@ class MainContent extends HTMLElement {
 
   eventHandler() {
     //console.log("hello world");
-  }
-
-  clear() {
     if (!this.shadowRoot) return;
-    this.shadowRoot.innerHTML = "";
+    const main_nav_item = this.shadowRoot.querySelectorAll(".main__nav-item");
+    main_nav_item.forEach((item) => {
+      item.addEventListener("click", () => {
+        main_nav_item.forEach((b) => b.classList.remove("active"));
+        item.classList.add("active");
+        if (!this.isFirst) {
+          alert("Esta funcionalidad todavia no esta implementada");
+          this.isFirst = true;
+        }
+      });
+    });
   }
 }
 

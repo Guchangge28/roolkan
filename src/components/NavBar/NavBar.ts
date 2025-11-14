@@ -27,10 +27,10 @@ class NavBar extends HTMLElement {
 
   setUpListener() {
     if (globalThis.innerWidth < 768) {
-      console.log("Mobile device detected");
       this.eventMobile();
     } else {
-      console.log("Desktop device detected");
+      console.log("Desktop");
+      this.eventHandler();
     }
   }
 
@@ -74,6 +74,7 @@ class NavBar extends HTMLElement {
   customDefineValues() {
     if (!this.shadowRoot) return;
     const user_name = this.shadowRoot.getElementById("user_name");
+
     if (!user_name) return;
     user_name.textContent = getDataLS("username");
   }

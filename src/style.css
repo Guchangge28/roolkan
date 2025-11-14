@@ -1,12 +1,17 @@
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
+    --bg-tag-card: rgba(0, 0, 0, 0.5);
+    --bg-active-item: #2957ba;
+    --p-size: 0.875rem;
+    --color-primary: #fff;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
 
+    --weight-default: 400;
+    --weight-bold: 700;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

@@ -10,10 +10,9 @@ const App = async () => {
   const fragment = document.createDocumentFragment();
   const route = mapRouter.get(pathName);
   const app = document.getElementById("app");
-  const middleChild = document.getElementById("middle-node");
   if (!app) return;
+  app.innerHTML = "";
   if (!route) {
-    app.innerHTML = "";
     const notFound = NotFound();
     fragment.appendChild(notFound);
     app.appendChild(fragment);
@@ -22,17 +21,7 @@ const App = async () => {
   const { component } = route;
   const content = await component(path);
   if (!content) return;
-  if (!middleChild) {
-    app.innerHTML = "";
-    const nav_bar = document.createElement("nav-bar");
-    const footer = document.createElement("app-footer");
-
-    fragment.append(nav_bar, content, footer);
-    app.appendChild(fragment);
-    return;
-  }
-
-  app.replaceChild(content, middleChild);
+  app.appendChild(content);
 };
 
 export default App;
