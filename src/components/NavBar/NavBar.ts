@@ -1,11 +1,7 @@
 import { closeSvg, menuSvg } from "../../configs/assets.ts";
 import { HTMLNavBar } from "../../configs/components.ts";
+import { storageUserRepository } from "../../repositories/storage.user.repository.ts";
 import loader_text from "../../utils/loader_text.ts";
-
-const getDataLS = (key: string) => {
-  const result = localStorage.getItem(key);
-  return result ? result : "anonymous";
-};
 
 class NavBar extends HTMLElement {
   static get observedAttributes() {
@@ -71,12 +67,13 @@ class NavBar extends HTMLElement {
 
   eventHandler() {}
 
-  customDefineValues() {
+  async customDefineValues() {
     if (!this.shadowRoot) return;
+    const user = await storageUserRepository.findById("0");
+    if (!user) return;
     const user_name = this.shadowRoot.getElementById("user_name");
-
     if (!user_name) return;
-    user_name.textContent = getDataLS("username");
+    user_name.textContent = user.user_name;
   }
 }
 
