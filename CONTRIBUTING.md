@@ -11,7 +11,7 @@
 - Las contribuciones deben subirse a la rama development/**.
 
 ## Sugerencias 
-- Para formar parte de nuestro equipo, puedes escribirme a:[e-mail](mailto:yesangchun@gmail.com)
+- Para formar parte del equipo, puedes escribirme a: [yesangchun@gmail.com](mailto:yesangchun@gmail.com)
 - En el correo electrónico, menciona el rol en el que te gustaría contribuir.
 - Puedes postular a cualquier rol sin necesidad de conocimientos previos, "aquí aprendes".
 
