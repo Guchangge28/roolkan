@@ -1,6 +1,6 @@
 import { closeSvg, menuSvg } from "../../configs/assets.ts";
 import { HTMLNavBar } from "../../configs/components.ts";
-import { storageUserRepository } from "../../repositories/storage.user.repository.ts";
+import { authService } from "../../services/auth.service.ts";
 import loader_text from "../../utils/loader_text.ts";
 
 class NavBar extends HTMLElement {
@@ -69,10 +69,12 @@ class NavBar extends HTMLElement {
 
   async customDefineValues() {
     if (!this.shadowRoot) return;
-    const user = await storageUserRepository.findById("0");
-    if (!user) return;
     const user_name = this.shadowRoot.getElementById("user_name");
     if (!user_name) return;
+    const user = await authService.getUser();
+    if (!user) return;
+    const parent = user_name.parentNode! as HTMLAnchorElement;
+    parent.href = "/user";
     user_name.textContent = user.user_name;
   }
 }
