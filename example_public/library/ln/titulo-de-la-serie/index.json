@@ -1,0 +1,15 @@
+{
+  "id_serie": "0001",
+  "title": "Titulo de la Serie",
+  "author": "autor o autores",
+  "chapters": 1,
+  "year": "Año",
+  "raw": "",
+  "demography": "manhua",
+  "genre": "shounen",
+  "description": "esto es la sinópsis o Descripción",
+  "tags": ["tag1", "tag2"],
+  "image": "/img/default.jpg",
+  "image_secondary": "/img/default.jpg",
+  "url_chapter": "/library/ln/titulo-de-la-serie/cap"
+}

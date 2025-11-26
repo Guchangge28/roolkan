@@ -6,6 +6,8 @@ const accountSvg = "/assets/account.svg";
 const settingsSvg = "/assets/settings.svg";
 const staffSvg = "/assets/staff.svg";
 const starSvg = "/assets/star.svg";
+const visibilitySvg = "/assets/visibility.svg";
+const visibilityOffSvg = "/assets/visibility_off.svg";
 
 export {
   menuSvg,
@@ -16,4 +18,6 @@ export {
   settingsSvg,
   staffSvg,
   starSvg,
+  visibilitySvg,
+  visibilityOffSvg,
 };

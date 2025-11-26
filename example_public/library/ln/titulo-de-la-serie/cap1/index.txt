@@ -1,0 +1,6 @@
+<br>
+aqui va el contenido del capitulo
+cada párrafo nuevo se separa con la etiqueta break
+<br>
+<br>
+una en el primero y 2 en los siguientes
