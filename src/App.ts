@@ -1,5 +1,5 @@
 import mapRouter from "./router/map.router.ts";
-import NotFound from "./components/NotFound/NotFound.ts";
+import "./components/NotFound/NotFound.ts";
 import "./components/NavBar/NavBar.ts";
 import "./components/AppFooter/AppFooter.ts";
 import routerResolver from "./shared/resolver/router.resolver.ts";
@@ -13,7 +13,7 @@ const App = async () => {
   if (!app) return;
   app.innerHTML = "";
   if (!route) {
-    const notFound = NotFound();
+    const notFound = document.createElement("not-found");
     fragment.appendChild(notFound);
     app.appendChild(fragment);
     return;

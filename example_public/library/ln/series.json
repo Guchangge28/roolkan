@@ -1,0 +1,122 @@
+[
+  {
+    "id": "0001",
+    "title": "titulo de la serie",
+    "raiting": 0,
+    "demography": "seinen",
+    "genre": "novela",
+    "status": "ongoing",
+    "image": "/img/bg_serie/0001.jpg",
+    "url": ""
+  },
+  {
+    "id": "0002",
+    "title": "title",
+    "raiting": 0,
+    "demography": "shounen",
+    "genre": "novela",
+    "status": "ongoing",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0003",
+    "title": "title",
+    "raiting": 0,
+    "demography": "shounen",
+    "genre": "manhua",
+    "status": "ongoing",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0004",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0005",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0006",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0007",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0008",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0009",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0010",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0011",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  },
+  {
+    "id": "0012",
+    "title": "title",
+    "raiting": 0,
+    "demography": "demography",
+    "genre": "genre",
+    "status": "status",
+    "image": "/img/default.jpeg",
+    "url": ""
+  }
+]

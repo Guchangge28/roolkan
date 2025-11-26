@@ -19,6 +19,9 @@ class NavBar extends HTMLElement {
     this.shadowRoot.innerHTML = result;
     this.customDefineValues();
     this.setUpListener();
+    globalThis.addEventListener("user-login", () => {
+      this.userDefine();
+    });
   }
 
   setUpListener() {
@@ -32,8 +35,6 @@ class NavBar extends HTMLElement {
 
   eventMobile() {
     if (!this.shadowRoot) return;
-
-    const nav_logo = this.shadowRoot.getElementById("nav_logo");
     const nav_menu = this.shadowRoot.getElementById("nav_menu");
     const icon_menu = this.shadowRoot.getElementById(
       "icon_menu",
@@ -45,13 +46,6 @@ class NavBar extends HTMLElement {
     if (!icon_menu) return;
     if (!nav_navigator) return;
     if (!ankers) return;
-    if (!nav_logo) return;
-
-    nav_logo.addEventListener("click", () => {
-      history.pushState(null, "", "/");
-      globalThis.dispatchEvent(new Event("pushstate"));
-    });
-
     nav_menu.addEventListener("click", () => {
       icon_menu.src = icon_menu.src.includes("menu") ? closeSvg : menuSvg;
       nav_navigator.classList.toggle("hidden");
@@ -65,9 +59,25 @@ class NavBar extends HTMLElement {
     });
   }
 
-  eventHandler() {}
+  eventHandler() {
+    if (!this.shadowRoot) return;
+    const nav_navigator = this.shadowRoot.getElementById("nav_navigator");
+    if (!nav_navigator) return;
+    nav_navigator.classList.remove("hidden");
+  }
 
-  async customDefineValues() {
+  customDefineValues() {
+    if (!this.shadowRoot) return;
+    const nav_logo = this.shadowRoot.getElementById("nav_logo");
+    if (!nav_logo) return;
+    nav_logo.addEventListener("click", () => {
+      history.pushState(null, "", "/");
+      globalThis.dispatchEvent(new Event("pushstate"));
+    });
+    this.userDefine();
+  }
+
+  async userDefine() {
     if (!this.shadowRoot) return;
     const user_name = this.shadowRoot.getElementById("user_name");
     if (!user_name) return;

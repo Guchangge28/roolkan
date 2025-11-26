@@ -26,16 +26,19 @@ type ResultLoader<T> = {
 };
 
 type AttachSerie = {
-  typeResult: string;
+  id_serie: string;
   title: string;
+  chapters: number;
   author: string;
   year: string;
-  raiting: number;
+  raw: string;
   demography: string;
   genre: string;
   description: string;
   tags: string[];
   image: string;
+  image_secondary: string;
+  url_chapter: string;
 };
 
 type Chapter = {
@@ -45,6 +48,18 @@ type Chapter = {
   content: string[];
 };
 
+type Headers_chapter = {
+  id_serie: string;
+  title: string;
+  chapters: number;
+  current_chapter: number;
+  url_chapter: string;
+};
+
+type BookMark = {
+  value: number;
+};
+
 export type {
   Sesion,
   Router,
@@ -52,4 +67,6 @@ export type {
   ResultLoader,
   AttachSerie as AtachSerie,
   Chapter,
+  Headers_chapter,
+  BookMark,
 };
