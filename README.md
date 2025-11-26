@@ -35,3 +35,8 @@ npm run dev
 > para el manejo de roles y permisos,
 > para un chat en tiempo real
 > y para el almacenamiento de archivos
+
+### Créditos
+
+- [Guchangge28](https://github.com/Guchangge28) - creador del proyecto
+- [Codehal](https://youtu.be/hlwlM4a5rxg?si=5VVl2EeJSoNvnAvu) - se extrajo el login

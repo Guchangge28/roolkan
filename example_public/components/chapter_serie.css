@@ -1,0 +1,42 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chapter {
+    margin-top: 60px;
+    padding: 5px;
+}
+
+.chapter__header,
+.chapter__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapter__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.chapter__content img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--bg-active-item);
+    cursor: pointer;
+    text-decoration: none;
+}
